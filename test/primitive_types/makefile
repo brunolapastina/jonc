@@ -5,4 +5,4 @@ LIB = -L/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/amd64/server
 
 all:
 	javac -cp . -sourcepath . MyTest.java
-	$(CXX) -Wall -Wextra -O0 -ggdb3 $(INC) --std=c++11 -pthread main.cpp -o primitive_types $(LIB) -ljvm
+	$(CXX) -Wall -Wextra -O0 -ggdb3 $(INC) --std=c++11 -pthread main.cpp -o test_primitive_types $(LIB) -ljvm
