@@ -47,7 +47,7 @@ public:
    }
 
 private:
-   const char* default_options_ = "-Djava.class.path=./java";
+   const char* default_options_ = "-Djava.class.path=./";
    JavaVM* jvm_ = nullptr;
    JNIEnv* env_ = nullptr;
 

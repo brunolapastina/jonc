@@ -12,15 +12,6 @@ int main()
 
       jonc::jclass_instance  inst( vm, "MyTest" );
 
-      inst.call_method<void>( "myexp", std::string("ola") );
-      if( vm.get_env().ExceptionCheck() == JNI_TRUE )
-      {
-         jonc::java_exception exception( vm, vm.get_env().ExceptionOccurred() );
-         std::cout << "EXCEPTION Happened:" << std::endl;
-         exception.printStackTrace();
-         vm.get_env().ExceptionClear();
-      }
-
       inst.call_method<void>( "myvoid" );
       inst.call_method<void>( "mymain", 10 );
       inst.call_method<void>( "mystring", std::string("ola") );

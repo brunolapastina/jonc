@@ -259,14 +259,14 @@ private:
 
    jmethodID get_method_id( const char* method_name, const char* signature )
    {
-      jmethodID meth_id = jvm_.get_env().GetMethodID(my_class_, method_name, signature);
-      if(meth_id == nullptr)
+      jmethodID method_id = jvm_.get_env().GetMethodID(my_class_, method_name, signature);
+      if(method_id == nullptr)
       {
          jvm_.check_for_exceptions();
          throw jonc::method_not_found( std::string("method '") + method_name + "' in class '" + my_name_ + "' with signture '" + signature + "' not found" );
       }
 
-      return meth_id;
+      return method_id;
    }
 
    template< class ret_t, class inner_t >
