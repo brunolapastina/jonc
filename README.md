@@ -27,7 +27,7 @@ You will also need at leat C++11 support (in GCC and Clang, use -std=c++11). If 
 
 ## Examples
 
-The [test folder](https://github.com/brunolapastina/jonc/tree/master/test) has a bunch of examples. Go there and take a look at the README.
+The [test folder](test) has a bunch of examples. Go there and take a look at the README.
 
 ## License
 
