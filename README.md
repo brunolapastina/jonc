@@ -1,5 +1,7 @@
 # JONC - Java on C++
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/brunolapastina/jonc/master/LICENSE)
+
 A simple header-only library to call Java methods in C++ without having to think about all the JNI conversions
 
 - [Design goals](#design-goals)
@@ -23,7 +25,7 @@ To use this library, you need to include only the `jonc.hpp`.
 #include <jonc/jonc.hpp>
 ```
 
-You will also need at leat C++11 support (in GCC and Clang, use -std=c++11). If you enable more recent C++ standards, the library will try to make the best use of it, so, if you can, do it!
+You will also need at least C++11 support (in GCC and Clang, use -std=c++11). If you enable more recent C++ standards, the library will try to make the best use of it, so, if you can, do it!
 
 ## Examples
 
@@ -63,4 +65,4 @@ If you have any question, start by looking at [this link](https://www.boost.org/
 
 ## Acknowledgments
 
-- [**Andrzej Krzemienski**](https://akrzemi1.wordpress.com) for building this amazing [Compile-time string concatenation library](https://github.com/akrzemi1/static_string) fully explained in [this article](https://akrzemi1.wordpress.com/2017/06/28/compile-time-string-concatenation/). Whith this library I was able to eliminate all the runtime overhead of dynamically building the method signatures.
+- [**Andrzej Krzemienski**](https://akrzemi1.wordpress.com) for building this amazing [Compile-time string concatenation library](https://github.com/akrzemi1/static_string) fully explained in [this article](https://akrzemi1.wordpress.com/2017/06/28/compile-time-string-concatenation/). With this library I was able to eliminate all the runtime overhead of dynamically building the method signatures.
