@@ -1,3 +1,10 @@
+/**
+ * JONC primitive type conversion test
+ *
+ * This test will load the JVM, instanciate a Java class and call some methods to test the automatic value conversion
+ *
+ */
+
 #include <iostream>
 #include "jonc/jonc.hpp"
 
@@ -5,12 +12,11 @@ int main()
 {
    try
    {
+      // Load the JVM without any parameters (default constructed)
       jonc::jvm vm;
 
-      const auto ver = vm.version();
-      std::cout << "JVM load succeeded: Version " << ((ver>>16)&0x0f) << "."<<(ver&0x0f) << std::endl;
-
-      jonc::jclass_instance  inst( vm, "MyTest" );
+      // Create an instance of the PrimitiveTypes class
+      jonc::jclass_instance  inst( vm, "PrimitiveTypes" );
 
       inst.call_method<void>( "myvoid" );
       inst.call_method<void>( "mymain", 10 );

@@ -1,12 +1,12 @@
-public class MyTest {
-   public MyTest( int i )
+public class PrimitiveTypes {
+   public PrimitiveTypes( int i )
    {
-      System.out.println("Hello, World in java from MyTest ctor " + i);
+      System.out.println("Hello, World in java from PrimitiveTypes ctor " + i);
    }
 
-   public MyTest()
+   public PrimitiveTypes()
    {
-      System.out.println("Hello, World in java from MyTest ctor void" );
+      System.out.println("Hello, World in java from PrimitiveTypes ctor void" );
    }
 
    public void myvoid() {
