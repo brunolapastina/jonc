@@ -1,7 +1,7 @@
 INC = -I$(JAVA_HOME)/include \
 		-I$(JAVA_HOME)/include/linux \
 		-I../../include
-LIB = -L/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/amd64/server
+LIB = -L$(JAVA_HOME)/jre/lib/amd64/server
 
 all:
 	javac -cp . -sourcepath . PrimitiveTypes.java
